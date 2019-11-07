@@ -8,10 +8,12 @@ namespace EmployeeRegister_CRUD_MVC_EFCore.Models
 {
     public class EmployeeContext:DbContext
     {
-        public EmployeeContext()
+        public EmployeeContext(DbContextOptions<EmployeeContext> options) : base(options)
         {
 
         }
 
+
+        public DbSet<Employee> Employees { get; set; }
     }
 }
