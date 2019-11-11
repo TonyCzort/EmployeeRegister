@@ -59,6 +59,7 @@ namespace EmployeeRegister_CRUD_MVC_EFCore
             {
                 routes.MapRoute(
                     name: "default",
+                    //controller=Employee makes Emloyee starting page, not Index
                     template: "{controller=Employee}/{action=Index}/{id?}");
             });
         }
