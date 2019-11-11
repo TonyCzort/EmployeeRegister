@@ -22,7 +22,7 @@ namespace EmployeeRegister_CRUD_MVC_EFCore.Migrations
 
             modelBuilder.Entity("EmployeeRegister_CRUD_MVC_EFCore.Models.Employee", b =>
                 {
-                    b.Property<int>("EmployeeID")
+                    b.Property<int>("EmployeeId")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -39,7 +39,7 @@ namespace EmployeeRegister_CRUD_MVC_EFCore.Migrations
                     b.Property<string>("Position")
                         .HasColumnType("varchar(100)");
 
-                    b.HasKey("EmployeeID");
+                    b.HasKey("EmployeeId");
 
                     b.ToTable("Employees");
                 });
